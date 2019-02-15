@@ -1,0 +1,15 @@
+{% extends "szablon.html" %}
+{% block tytul %}Lista klas{% endblock %}
+{% block h1 %}Lista klas{% endblock %}
+
+{% block tresc %}
+<ol>
+    {% for p in query %}
+    <li>
+        {{ p.pytanie }}
+        <a href="{{ url_for('edytuj', pid=p.id) }}" class="btn btn-primary">Edytuj</a>
+        <a href="{{ url_for('usun', pid=p.id) }}" class="btn btn-primary">Usuń</a><br><br>
+    </li>
+    {% endfor %}
+</ol>
+{% endblock %}

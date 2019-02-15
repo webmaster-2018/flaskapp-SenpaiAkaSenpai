@@ -8,7 +8,7 @@ import os
 
 # konfiguracja aplikacji
 app.config.update(dict(
-    SECRET_KEY='bardzosekretnawartosc',
+    SECRET_KEY='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaaaA',
     DATABASE=os.path.join(app.root_path, baza_plik),
 ))
 
